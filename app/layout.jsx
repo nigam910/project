@@ -1,10 +1,14 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
+import {FaGithub, FaTwitter, FaLinkedind} from 'react-icons/fi'
+
+
 //components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import { icons } from "lucide-react";
 
 
 const jetBrains_Mono = JetBrains_Mono({ 
@@ -27,7 +31,9 @@ export default function RootLayout({ children }) {
         <PageTransition>
           {children}
         </PageTransition>
-        
+       <footer className="text-center justify-center flex  w-full h-full  text-accent bg-transparent mt-10" >
+        2024 @copyright Desgin by me 
+       </footer>
         </body>
     </html>
   );
