@@ -9,7 +9,7 @@ import Stats from "@/components/Stats";
 
 
 
-function Home() {
+const Home = () => {
   return (
   <section className="h-full">
     <div className="container mx-auto h-full">
